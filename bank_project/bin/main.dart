@@ -26,5 +26,7 @@ void main() {
       print("Exiting the system. Goodbye!\n");
       break;
     }
+
+    clearScreen();
   }
 }

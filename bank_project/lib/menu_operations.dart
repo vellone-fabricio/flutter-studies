@@ -1,3 +1,6 @@
+import 'account.dart';
+import 'operations/help.dart';
+
 Map<int, String> createOperationMap() {
   List<String> operations = [
     "Show all accounts",
@@ -32,7 +35,6 @@ void chooseOperations(int selectedOperation) {
       print("Show all accounts");
       break;
     case 1:
-      print("Create new account");
       break;
     case 2:
       print("Delete account");
@@ -50,9 +52,9 @@ void chooseOperations(int selectedOperation) {
       print("Check Balance");
       break;
     case 7:
-      print("Help");
+      helpOperation();
       break;
-    case 8:
+    default:
       throw "exit";
   }
 }
