@@ -7,7 +7,7 @@
 [] Withdraw;
 [] Transfer;
 [] Help;
-[] Quit;
+[x] Quit;
 
 # Accounts obj
 Account has the following attributes:
