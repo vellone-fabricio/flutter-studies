@@ -1,4 +1,4 @@
-import 'account.dart';
+import 'operations/create_account.dart';
 import 'operations/help.dart';
 
 Map<int, String> createOperationMap() {
@@ -35,6 +35,8 @@ void chooseOperations(int selectedOperation) {
       print("Show all accounts");
       break;
     case 1:
+      String newAccountNumber = createAccount();
+      print("\nNew account created with number $newAccountNumber");
       break;
     case 2:
       print("Delete account");
