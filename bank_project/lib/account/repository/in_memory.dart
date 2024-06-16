@@ -23,14 +23,30 @@ class InMemoryRepository implements AccountRepositoryInterface {
   }
 
   @override
-  getAccount(String accountNumber) {
-    // TODO: implement getAccount
-    throw UnimplementedError();
+  Account getAccount(String accountNumber) {
+    Account? account = accounts[accountNumber];
+    if (account == null) {
+      throw "Account not found";
+    }
+
+    return account;
   }
 
   @override
   List<Account> getAllAccounts() {
     return accounts.values.toList();
+  }
+
+  @override
+  double checkBalance(String accountNumber) {
+    Account account = getAccount(accountNumber);
+    return account.balance;
+  }
+
+  @override
+  void deposit(String accountNumber, double amount) {
+    Account account = getAccount(accountNumber);
+    account.balance += amount;
   }
 }
 

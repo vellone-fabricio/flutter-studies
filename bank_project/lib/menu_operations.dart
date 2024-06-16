@@ -1,5 +1,7 @@
+import 'package:bank_project/operations/check_balance_operation.dart';
 import 'package:bank_project/operations/create_account.dart';
 import 'package:bank_project/operations/delete_account.dart';
+import 'package:bank_project/operations/deposit_operation.dart';
 import 'package:bank_project/operations/help.dart';
 import 'package:bank_project/operations/show_all_acounts.dart';
 
@@ -43,7 +45,7 @@ void chooseOperations(int selectedOperation) {
       deleteAccount();
       break;
     case 3:
-      print("Deposit");
+      deposit();
       break;
     case 4:
       print("Withdraw");
@@ -52,7 +54,7 @@ void chooseOperations(int selectedOperation) {
       print("Transfer");
       break;
     case 6:
-      print("Check Balance");
+      checkBalance();
       break;
     case 7:
       helpOperation();

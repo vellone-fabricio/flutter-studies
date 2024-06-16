@@ -13,7 +13,15 @@ class AccountRepositoryInterface {
     throw UnimplementedError();
   }
 
-  getAccount(String accountNumber) {
+  Account getAccount(String accountNumber) {
+    throw UnimplementedError();
+  }
+
+  double checkBalance(String accountNumber) {
+    throw UnimplementedError();
+  }
+
+  void deposit(String accountNumber, double amount) {
     throw UnimplementedError();
   }
 }

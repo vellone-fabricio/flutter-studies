@@ -3,7 +3,8 @@
 - [x] Delete account
 - [ ] Show account
 - [x] Create account
-- [ ] Deposit
+- [x] Check balance
+- [x] Deposit
 - [ ] Withdraw
 - [ ] Transfer
 - [x] Help
@@ -30,6 +31,7 @@ Account has the following attributes:
 - [] Create account
 - [] Show account
 - [] Delete account
+- [] Check balance
 - [] Deposit
 - [] Withdraw
 - [] Transfer
