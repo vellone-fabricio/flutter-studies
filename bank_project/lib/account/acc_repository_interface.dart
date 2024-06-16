@@ -28,4 +28,9 @@ class AccountRepositoryInterface {
   void withdraw(String accountNumber, double amount) {
     throw UnimplementedError();
   }
+
+  void transfer(
+      String fromAccountNumber, String toAccountNumber, double amount) {
+    throw UnimplementedError();
+  }
 }

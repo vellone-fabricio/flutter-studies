@@ -54,6 +54,29 @@ class InMemoryRepository implements AccountRepositoryInterface {
     Account account = getAccount(accountNumber);
     account.balance -= amount;
   }
+
+  @override
+  void transfer(
+      String fromAccountNumber, String toAccountNumber, double amount) {
+    try {
+      getAccount(fromAccountNumber);
+    } catch (e) {
+      print("From account not found");
+      return;
+    }
+
+    try {
+      getAccount(toAccountNumber);
+    } catch (e) {
+      print("To account not found");
+      return;
+    }
+
+    withdraw(fromAccountNumber, amount);
+    deposit(toAccountNumber, amount);
+
+    print("Transfer successful");
+  }
 }
 
 var in_memory_respository = InMemoryRepository();

@@ -5,8 +5,8 @@
 - [x] Create account
 - [x] Check balance
 - [x] Deposit
-- [ ] Withdraw
-- [ ] Transfer
+- [x] Withdraw
+- [x] Transfer
 - [x] Help
 - [x] Quit
 

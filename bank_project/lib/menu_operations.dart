@@ -4,6 +4,7 @@ import 'package:bank_project/operations/delete_account.dart';
 import 'package:bank_project/operations/deposit_operation.dart';
 import 'package:bank_project/operations/help.dart';
 import 'package:bank_project/operations/show_all_acounts.dart';
+import 'package:bank_project/operations/transfer_operation.dart';
 import 'package:bank_project/operations/withdraw_operation.dart';
 
 Map<int, String> createOperationMap() {
@@ -52,7 +53,7 @@ void chooseOperations(int selectedOperation) {
       withdraw();
       break;
     case 5:
-      print("Transfer");
+      transfer();
       break;
     case 6:
       checkBalance();
