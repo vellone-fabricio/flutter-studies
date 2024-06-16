@@ -1,4 +1,4 @@
-import 'account.dart';
+import 'package:bank_project/account/account.dart';
 
 class AccountRepositoryInterface {
   String saveAccount(Account account) {

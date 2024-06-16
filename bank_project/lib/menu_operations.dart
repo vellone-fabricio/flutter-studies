@@ -1,5 +1,7 @@
-import 'operations/create_account.dart';
-import 'operations/help.dart';
+import 'package:bank_project/operations/create_account.dart';
+import 'package:bank_project/operations/delete_account.dart';
+import 'package:bank_project/operations/help.dart';
+import 'package:bank_project/operations/show_all_acounts.dart';
 
 Map<int, String> createOperationMap() {
   List<String> operations = [
@@ -32,14 +34,13 @@ void printMenu(Map<int, String> operationMap) {
 void chooseOperations(int selectedOperation) {
   switch (selectedOperation) {
     case 0:
-      print("Show all accounts");
+      showAllAcounts();
       break;
     case 1:
-      String newAccountNumber = createAccount();
-      print("\nNew account created with number $newAccountNumber");
+      createAccount();
       break;
     case 2:
-      print("Delete account");
+      deleteAccount();
       break;
     case 3:
       print("Deposit");

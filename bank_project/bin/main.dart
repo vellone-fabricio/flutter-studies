@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import '../lib/menu_operations.dart';
-import '../lib/utils.dart';
+import 'package:bank_project/menu_operations.dart';
+import 'package:bank_project/utils.dart';
 
 void main() {
   print("Welcome to the Bank System!\n\n");

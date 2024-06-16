@@ -1,8 +1,9 @@
-import '../acc_repository_interface.dart';
-import '../account.dart';
+import 'package:bank_project/account/acc_repository_interface.dart';
+import 'package:bank_project/account/account.dart';
+import 'package:bank_project/globals.dart';
 
 class InMemoryRepository implements AccountRepositoryInterface {
-  Map<String, Account> accounts = {};
+  Map<String, Account> accounts = ALL_ACCOUNTS;
 
   @override
   String saveAccount(Account account) {
@@ -29,8 +30,7 @@ class InMemoryRepository implements AccountRepositoryInterface {
 
   @override
   List<Account> getAllAccounts() {
-    // TODO: implement getAllAccounts
-    throw UnimplementedError();
+    return accounts.values.toList();
   }
 }
 

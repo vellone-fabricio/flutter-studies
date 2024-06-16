@@ -1,12 +1,12 @@
 # Bank project specifications
-- [ ] Show all accounts
-- [ ] Delete account
+- [x] Show all accounts
+- [x] Delete account
 - [ ] Show account
 - [x] Create account
 - [ ] Deposit
 - [ ] Withdraw
 - [ ] Transfer
-- [ ] Help
+- [x] Help
 - [x] Quit
 
 # Accounts obj
@@ -17,12 +17,12 @@ Account has the following attributes:
 - password
 
 # Data storage
-- [] In memory
+- [x] In memory
 - [] File
 - [] Database
 
 # User interface
-- [] Command line
+- [x] Command line
 - [] Web
 - [] Mobile
 

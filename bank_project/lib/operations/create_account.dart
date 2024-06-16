@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import '../account/account.dart';
-import '../account/repository/in_memory.dart';
-import '../utils.dart';
+import 'package:bank_project/account/account.dart';
+import 'package:bank_project/account/repository/in_memory.dart';
+import 'package:bank_project/utils.dart';
 
-String createAccount() {
+void createAccount() {
   clearScreen();
   print("Creating a new account");
   print("Please enter the account name: ");
@@ -23,5 +23,5 @@ String createAccount() {
 
   Account account = Account(name!, password!, balance!);
   String accId = in_memory_respository.saveAccount(account);
-  return accId;
+  print("Account created with number $accId");
 }

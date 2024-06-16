@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import '../utils.dart';
+import 'package:bank_project/utils.dart';
 
 void helpOperation() {
   clearScreen();
