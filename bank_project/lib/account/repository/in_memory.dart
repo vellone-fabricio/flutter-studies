@@ -48,6 +48,12 @@ class InMemoryRepository implements AccountRepositoryInterface {
     Account account = getAccount(accountNumber);
     account.balance += amount;
   }
+
+  @override
+  void withdraw(String accountNumber, double amount) {
+    Account account = getAccount(accountNumber);
+    account.balance -= amount;
+  }
 }
 
 var in_memory_respository = InMemoryRepository();

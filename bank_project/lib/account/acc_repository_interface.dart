@@ -24,4 +24,8 @@ class AccountRepositoryInterface {
   void deposit(String accountNumber, double amount) {
     throw UnimplementedError();
   }
+
+  void withdraw(String accountNumber, double amount) {
+    throw UnimplementedError();
+  }
 }
