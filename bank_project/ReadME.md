@@ -19,21 +19,21 @@ Account has the following attributes:
 
 # Data storage
 - [x] In memory
-- [] File
-- [] Database
+- [ ] File
+- [ ] Database
 
 # User interface
 - [x] Command line
-- [] Web
-- [] Mobile
+- [ ] Web
+- [ ] Mobile
 
 # Test cases
-- [] Create account
-- [] Show account
-- [] Delete account
-- [] Check balance
-- [] Deposit
-- [] Withdraw
-- [] Transfer
-- [] Quit
-- [] Help
+- [ ] Create account
+- [ ] Show account
+- [ ] Delete account
+- [ ] Check balance
+- [ ] Deposit
+- [ ] Withdraw
+- [ ] Transfer
+- [ ] Quit
+- [ ] Help
